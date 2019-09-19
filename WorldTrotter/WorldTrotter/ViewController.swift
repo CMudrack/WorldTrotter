@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         
     }
 
+    @IBOutlet var celsiusLabel: UILabel!
+    @IBAction func fahrenheitFieldChange(_ sender: UITextField) {
+        print("Text = \(sender.text)")
+    }
+    
 
 }
 
