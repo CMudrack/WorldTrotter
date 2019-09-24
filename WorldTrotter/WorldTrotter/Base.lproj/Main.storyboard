@@ -53,6 +53,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96409447461864395" green="1" blue="0.99878526414121416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="30V-cK-AFy" firstAttribute="top" secondItem="des-jh-xWF" secondAttribute="bottom" constant="50" id="8jQ-Am-CCw"/>
                             <constraint firstItem="30V-cK-AFy" firstAttribute="centerX" secondItem="0Ew-Lg-1CT" secondAttribute="centerX" id="9f6-y8-oJF"/>
@@ -69,12 +70,21 @@
                             <constraint firstItem="des-jh-xWF" firstAttribute="top" secondItem="c1h-ti-uEs" secondAttribute="bottom" constant="50" id="uLx-ym-5qW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Uy4-OT-v5V" appends="YES" id="IrF-zV-LfQ"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="FahrenheitTextField" destination="9PZ-d4-EDa" id="me6-JJ-6fO"/>
                         <outlet property="celsiusLabel" destination="des-jh-xWF" id="rht-wA-NKZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Uy4-OT-v5V">
+                    <connections>
+                        <action selector="TapDetected:" destination="BYZ-38-t0r" id="6G4-an-e16"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-65.217391304347828" y="138.61607142857142"/>
         </scene>
