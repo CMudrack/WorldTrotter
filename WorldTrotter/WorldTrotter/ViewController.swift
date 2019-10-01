@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         FahrenheitTextField.delegate = self
+        print("Convert viewDidLoad()")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Convert viewDidAppear")
     }
 
     @IBOutlet weak var FahrenheitTextField: UITextField!
@@ -54,6 +60,15 @@ class ViewController: UIViewController {
     
     @IBAction func TapDetected(_ sender: UITapGestureRecognizer) {
         FahrenheitTextField.resignFirstResponder()
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField.text?.contains(".") == true &&
+            string.contains(".") {
+            return false
+        } else {
+            return true
+        }
     }
 }
 
