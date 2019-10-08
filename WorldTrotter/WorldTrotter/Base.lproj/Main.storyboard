@@ -18,26 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ew-Lg-1CT">
-                                <rect key="frame" x="132" y="200" width="150" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ew-Lg-1CT">
+                                <rect key="frame" x="132.5" y="200" width="149.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.050816246574909685" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-ti-uEs">
-                                <rect key="frame" x="178" y="271" width="58" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-ti-uEs">
+                                <rect key="frame" x="178.5" y="270.5" width="57.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="des-jh-xWF">
-                                <rect key="frame" x="148.5" y="342" width="117" height="84"/>
+                                <rect key="frame" x="148.5" y="341" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.89803921568627454" green="0.28139102699480917" blue="0.23847262789800575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30V-cK-AFy">
-                                <rect key="frame" x="145.5" y="476" width="123" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30V-cK-AFy">
+                                <rect key="frame" x="146" y="475" width="122.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.050816246574909685" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                 <rect key="frame" x="149.5" y="66" width="115" height="84"/>
                                 <color key="textColor" red="0.5" green="0.039697014089384808" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <action selector="fahrenheitFieldChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="VjG-lb-dIw"/>
                                 </connections>
@@ -55,15 +55,21 @@
                         <color key="backgroundColor" red="0.96409447461864395" green="1" blue="0.99878526414121416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c1h-ti-uEs" secondAttribute="trailing" constant="20" id="1fj-jI-J98"/>
                             <constraint firstItem="30V-cK-AFy" firstAttribute="top" secondItem="des-jh-xWF" secondAttribute="bottom" constant="50" id="8jQ-Am-CCw"/>
                             <constraint firstItem="30V-cK-AFy" firstAttribute="centerX" secondItem="0Ew-Lg-1CT" secondAttribute="centerX" id="9f6-y8-oJF"/>
+                            <constraint firstItem="30V-cK-AFy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BMJ-1H-Wiu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Ew-Lg-1CT" secondAttribute="trailing" constant="20" id="CkO-hn-S9y"/>
                             <constraint firstItem="c1h-ti-uEs" firstAttribute="centerX" secondItem="9PZ-d4-EDa" secondAttribute="centerX" id="Ge9-1R-Vlk"/>
                             <constraint firstItem="des-jh-xWF" firstAttribute="centerX" secondItem="0Ew-Lg-1CT" secondAttribute="centerX" id="HRe-nf-bRM"/>
                             <constraint firstItem="30V-cK-AFy" firstAttribute="centerX" secondItem="9PZ-d4-EDa" secondAttribute="centerX" id="IER-MZ-U6q"/>
                             <constraint firstItem="des-jh-xWF" firstAttribute="centerX" secondItem="9PZ-d4-EDa" secondAttribute="centerX" id="Lsf-vy-mad"/>
+                            <constraint firstItem="c1h-ti-uEs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NrI-WQ-WxO"/>
                             <constraint firstItem="0Ew-Lg-1CT" firstAttribute="top" secondItem="9PZ-d4-EDa" secondAttribute="bottom" constant="50" id="QBr-Ay-1Ho"/>
+                            <constraint firstItem="0Ew-Lg-1CT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SBL-Nr-6e8"/>
                             <constraint firstItem="9PZ-d4-EDa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="TEg-LC-YLI"/>
                             <constraint firstItem="c1h-ti-uEs" firstAttribute="centerX" secondItem="0Ew-Lg-1CT" secondAttribute="centerX" id="nCS-4B-j61"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="30V-cK-AFy" secondAttribute="trailing" constant="20" id="nQT-K9-oxl"/>
                             <constraint firstItem="0Ew-Lg-1CT" firstAttribute="centerX" secondItem="9PZ-d4-EDa" secondAttribute="centerX" id="re8-Vd-TNT"/>
                             <constraint firstItem="c1h-ti-uEs" firstAttribute="top" secondItem="0Ew-Lg-1CT" secondAttribute="bottom" constant="50" id="rug-Qa-avJ"/>
                             <constraint firstItem="9PZ-d4-EDa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tZd-O6-T7k"/>
